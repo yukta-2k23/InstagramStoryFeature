@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    height: 400px;
+    width: 350px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.storiyan{
+    height: 100px;
+    width: 100%;
+    border-bottom:1px solid lightslategray;
+    padding:15px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.storiyan::-webkit-scrollbar{
+    display: none;
+}
+.story{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background: linear-gradient(240deg,rgb(79, 91, 213),rgb(150, 47, 191),rgb(214, 41, 118),rgb(250, 126, 30),rgb(254, 218, 117));
+    padding: 2px;
+    display: inline-block;
+}
+.story img{
+    height:100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+.full{
+    position: absolute;
+    height:100%;
+    width: 100%;
+    display:none;
+    padding:15px;
+    background-size: cover;
+    background-position: center;
+}
+.progress{
+    height:5px;
+    width: 100%;
+    background-color: lightslategray;
+    opacity: 0.6;
+    border-radius: 10px;
+}
+.growth{
+    height:100%;
+    width: 0;
+    background-color: white;
+    border-radius: 10px;
+}
+.profile{
+    margin-top:5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+.profileimg{
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid rgb(150, 47, 191);
+    background: linear-gradient(240deg,rgb(79, 91, 213),rgb(150, 47, 191),rgb(214, 41, 118),rgb(250, 126, 30),rgb(254, 218, 117));
+    background-size: cover;
+    background-position: center;
+}
+.user h5{
+    font-size:1em;
+    font-weight: 600;
+    color:white;
+    font-family: "helvetica";
+}
+.profile .close{
+    font-size: 1.4em;
+    font-weight: 700;
+    color:white;
+
+}
